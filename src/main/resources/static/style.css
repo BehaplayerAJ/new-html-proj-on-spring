@@ -1,0 +1,153 @@
+/* Сброс стилей для консистентности */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Общие настройки */
+body {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Arial', sans-serif; /* Основной шрифт */
+    background-color: #8800fa;       /* Светлый фон */
+    color: #ffffff;                     /* Темный текст */
+    line-height: 1.6;                /* Удобочитаемая высота строки */
+    padding: 20px;                   /* Отступы вокруг */
+    font-size: 30px;
+}
+
+/* Стили для заголовков */
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 10px;
+    color: #ffffff; /* Синий цвет для заголовков */
+}
+
+/* Стили для ссылок */
+a {
+    color: #ffffff; /* Цвет ссылки */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0000c8; /* Темнее при наведении */
+}
+
+/* Стили для кнопок */
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Стили для текстовых полей */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+/* Пример карточки */
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Для списков */
+ul {
+    list-style: none;
+}
+
+/*ul li::before {*/
+/*    content: "•";*/
+/*    color: #007BFF;*/
+/*    margin-right: 8px;*/
+/*}*/
+
+/* Для таблиц */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #007BFF;
+    color: white;
+}
+
+.container{
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.siteHeader__container{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+}
+
+#siteHeader{
+    display: flex;
+    justify-content: space-between;
+}
+
+.siteHeader{
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerContainer__nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerContainer__ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+    padding: 15px;
+}
+
+.headerContainer__logo{
+    border-radius: 50%;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+        flex-direction: column;
+    }
+}
